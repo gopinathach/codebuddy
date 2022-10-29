@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "antd/dist/antd.css";
+import Home from "./comps/home/Home";
+import Carousel from "./comps/carousel/Carousel";
 
 function App() {
+  // https://github.com/codebuddyinterview/react/blob/main/Set3.md
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App d-flex flex-column justify-content-between overflow-hidden">
+      <div>
+        <Home />
+      </div>
+      <Carousel />
     </div>
   );
 }
