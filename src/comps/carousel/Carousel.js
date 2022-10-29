@@ -60,7 +60,7 @@ function Carousel() {
           className={`d-flex justify-content-center align-items-center cursor-pointer ${styles.carouselOpen}`}
           onClick={() => setIsCarouselOpen(!isCarouselOpen)}
         >
-          {isCarouselOpen ? (
+          {!isCarouselOpen ? (
             <i className="fas fa-chevron-up"></i>
           ) : (
             <i className="fas fa-chevron-down"></i>
